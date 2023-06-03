@@ -1,5 +1,6 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import project1 from "../assets/netflix.png"
 
 const container = {
   hidden: {},
@@ -91,7 +92,7 @@ const Projects = () => {
             BEAUTIFUL USER INTERFACES
           </div>
           <Project
-            title="Netflix-clone"
+            title={project1}
             linkurl="https://github.com/ss-sahoo/Netflix-clone"
             linkout="https://netflix-build-cc39e.web.app"
           />

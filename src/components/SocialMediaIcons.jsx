@@ -1,3 +1,7 @@
+import linkdin from '../assets/linkedin.png'
+import twitter from '../assets/twitter.png'
+import github from "../assets/githubwhite.svg"
+import insta from "../assets/instagram.png"
 const SocialMediaIcons = () => {
   return (
     <div className="flex justify-center md:justify-start my-10 gap-7">
@@ -7,7 +11,7 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="linkedin-link" src="../assets/linkedin.png" />
+        <img alt="linkedin-link" src={linkdin} />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
@@ -15,7 +19,7 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="twitter-link" src="../assets/twitter.png" />
+        <img alt="twitter-link" src={twitter} />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
@@ -23,7 +27,11 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="github-link" src="../assets/githubwhite.svg" style={{height:"25px",width:"43px"}} />
+        <img
+          alt="github-link"
+          src={github}
+          style={{ height: "25px", width: "43px" }}
+        />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
@@ -31,7 +39,7 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="instagram-link" src="../assets/instagram.png" />
+        <img alt="instagram-link" src={insta} />
       </a>
     </div>
   );
