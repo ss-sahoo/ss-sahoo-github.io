@@ -1,6 +1,12 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 import project1 from "../assets/netflix.png"
+import project2 from "../assets/Gym-website.png"
+import project3 from "../assets/Dashboard.png"
+import project4 from "../assets/creative-webpage.png"
+import project5 from "../assets/linkdin.png"
+import project6 from "../assets/slack.png"
+import project7 from "../assets/food2.png"
 
 const container = {
   hidden: {},
@@ -16,13 +22,13 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title ,linkurl,linkout}) => {
+const Project = ({ title ,linkurl,linkout,projectimg}) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
-    <motion.div variants={projectVariant} className="relative">
+    <motion.div variants={projectVariant} className="relative p-9 shadow-lg">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <div className="flex m-2 gap-2">
@@ -39,9 +45,9 @@ const Project = ({ title ,linkurl,linkout}) => {
         </div>
       </div>
       <img
-        height={"400px"}
-        width={"400px"}
-        src={`../assets/${projectTitle}.png`}
+        height={"500px"}
+        width={"500px"}
+        src={projectimg}
         alt={projectTitle}
         style={{ height: "100%" }}
       />
@@ -49,7 +55,7 @@ const Project = ({ title ,linkurl,linkout}) => {
   );
 };
 
-const Projects = () => {
+const Projects=() => {
   return (
     <section id="projects" className="pt-48 pb-48">
       {/* HEADINGS */}
@@ -87,51 +93,62 @@ const Projects = () => {
           {/* ROW 1 */}
           <div
             className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+              max-w-[500px] max-h-[500px] text-2xl font-playfair font-semibold"
           >
             BEAUTIFUL USER INTERFACES
           </div>
           <Project
-            title={project1}
+            title="Food-Ordering App"
+            projectimg={project7}
+            linkurl="https://github.com/ss-sahoo/food-ordering-app"
+            linkout="https://food-order-app-c4239.web.app/"
+          />
+          <Project
+            title="Netflix-Clone"
+            projectimg={project1}
             linkurl="https://github.com/ss-sahoo/Netflix-clone"
             linkout="https://netflix-build-cc39e.web.app"
+          />
+           <Project
+            title="Slack-Clone"
+            projectimg={project6}
+            linkurl="https://github.com/ss-sahoo/slack-clone"
           />
 
           <Project
             title="Gym-website"
+            projectimg={project2}
             linkurl="https://github.com/ss-sahoo/fitness-gym-react-template"
             linkout="https://ss-sahoo.github.io/fitness-gym-react-template/"
+          />
+           <Project
+            title="Linkdin-Clone"
+            projectimg={project5}
+            linkurl="https://github.com/ss-sahoo/Linkedin-clone-page"
+            linkout="https://linkedin-clone-ec13c.web.app/"
           />
 
           {/* ROW 2 */}
           <Project
             title="Dashboard"
+            projectimg={project3}
             linkurl="https://github.com/ss-sahoo/Board"
             linkout="https://deluxe-chimera-60f69c.netlify.app/"
           />
           <Project
             title="creative-webpage"
+            projectimg={project4}
             linkurl="https://github.com/ss-sahoo/Creative-web"
             linkout="https://ss-sahoo.github.io/Creative-web/"
           />
-          <Project
-            title="stop-watch"
-            linkurl="https://github.com/ss-sahoo/Stop-watch"
-            linkout="https://ss-sahoo.github.io/Stop-watch/"
-          />
+         
 
           {/* ROW 3 */}
-          <Project
-            title="food-ordering"
-            linkurl="https://github.com/ss-sahoo/food-factory"
-          />
-          <Project
-            title="Robo-page"
-            linkurl="https://github.com/ss-sahoo/igitrobo"
-          />
+         
+          
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+              max-w-[500px] max-h-[500px] text-2xl font-playfair font-semibold"
           >
             SMOOTH USER EXPERIENCE
           </div>

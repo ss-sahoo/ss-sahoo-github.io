@@ -1,10 +1,10 @@
 import linkdin from '../assets/linkedin.png'
 import twitter from '../assets/twitter.png'
-import github from "../assets/githubwhite.svg"
+import github from "../assets/github-mark-white.svg"
 import insta from "../assets/instagram.png"
 const SocialMediaIcons = () => {
   return (
-    <div className="flex justify-center md:justify-start my-10 gap-7">
+    <div className="flex justify-center items-center md:justify-start my-10 gap-7">
       <a
         className="hover:opacity-50 transition duration-500"
         href="https://www.linkedin.com/in/shradha-shaswati-sahoo-182940202"
@@ -30,7 +30,7 @@ const SocialMediaIcons = () => {
         <img
           alt="github-link"
           src={github}
-          style={{ height: "25px", width: "43px" }}
+          style={{ height: "35px", width: "35px" }}
         />
       </a>
       <a

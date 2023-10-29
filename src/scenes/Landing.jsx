@@ -52,10 +52,10 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-4xl font-playfair z-10 text-center md:text-start">
-            Shradha S. {""}
+            Shradha Shaswati {" "}
             <span
-              className="text-5xl xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
-              before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
+              className="text-4xl xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
+              before:absolute before:-left-[25px] before:-top-[90px] before:z-[-1]"
             >
               Sahoo
             </span>

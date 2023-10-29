@@ -76,7 +76,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            HTML,CSS,JAVASCRIPT,REACT.JS,BOOTSTAP,TAILWIND CSS
+            HTML,CSS,JAVASCRIPT,REACT.JS,BOOTSTAP,TAILWIND CSS,REDUX,FIREBASE
           </p>
         </motion.div>
 
@@ -101,7 +101,7 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">C++, JAVA, Object oriented prigramming</p>
+          <p className="mt-5">C++, C, Object oriented prigramming</p>
         </motion.div>
         {/* IMAGINATIVE */}
         <motion.div
