@@ -8,7 +8,7 @@ const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   const handleDownload = () => {
     const cvUrl =
-      "https://drive.google.com/file/d/1bFsNL164c7LokiUvZlW_S1SzZ5Ej0Nqi/view?usp=sharing";
+      "https://drive.google.com/file/d/1TbPTYuJVevnZLWL_TPIi5Z3EizSPZZQq/view?usp=sharing";
     window.open(cvUrl, "_blank");
   };
   return (
