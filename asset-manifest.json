@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.29d79948.css",
+    "main.js": "/static/js/main.dde0fde4.js",
+    "static/media/netflix.png": "/static/media/netflix.ceea74206fe6925beffc.png",
+    "static/media/creative-webpage.png": "/static/media/creative-webpage.2d12ed342d544b1ab006.png",
+    "static/media/slack.png": "/static/media/slack.f0389b830a82f29e9124.png",
+    "static/media/Gym-website.png": "/static/media/Gym-website.239354da6e14fd811ddb.png",
+    "static/media/profile-image.png": "/static/media/profile-image.25b312f07afaa89266fc.png",
+    "static/media/skills-image.png": "/static/media/skills-image.51e40da64df180a7669a.png",
+    "static/media/contact-image.jpeg": "/static/media/contact-image.37fcb61b49d6aa5c40d3.jpeg",
+    "static/media/food2.png": "/static/media/food2.0999fc9cf268f3c85443.png",
+    "static/media/linkdin.png": "/static/media/linkdin.20bd750a32181f1c1549.png",
+    "static/media/Dashboard.png": "/static/media/Dashboard.8111a379ff52e824f0be.png",
+    "static/media/brush.png": "/static/media/brush.85c9bab5ba2d7dcae1e3.png",
+    "static/media/github-mark-white.svg": "/static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
+    "index.html": "/index.html",
+    "static/media/close-icon.svg": "/static/media/close-icon.36a1df96f812b5f4c12f817f90a904c6.svg",
+    "static/media/menu-icon.svg": "/static/media/menu-icon.9cbfc3090b4b0aec575128df8ede3633.svg",
+    "main.29d79948.css.map": "/static/css/main.29d79948.css.map",
+    "main.dde0fde4.js.map": "/static/js/main.dde0fde4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29d79948.css",
+    "static/js/main.dde0fde4.js"
+  ]
+}
