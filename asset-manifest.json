@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.29d79948.css",
-    "main.js": "/static/js/main.dde0fde4.js",
+    "main.js": "/static/js/main.937f3044.js",
     "static/media/netflix.png": "/static/media/netflix.ceea74206fe6925beffc.png",
     "static/media/creative-webpage.png": "/static/media/creative-webpage.2d12ed342d544b1ab006.png",
     "static/media/slack.png": "/static/media/slack.f0389b830a82f29e9124.png",
@@ -18,10 +18,10 @@
     "static/media/close-icon.svg": "/static/media/close-icon.36a1df96f812b5f4c12f817f90a904c6.svg",
     "static/media/menu-icon.svg": "/static/media/menu-icon.9cbfc3090b4b0aec575128df8ede3633.svg",
     "main.29d79948.css.map": "/static/css/main.29d79948.css.map",
-    "main.dde0fde4.js.map": "/static/js/main.dde0fde4.js.map"
+    "main.937f3044.js.map": "/static/js/main.937f3044.js.map"
   },
   "entrypoints": [
     "static/css/main.29d79948.css",
-    "static/js/main.dde0fde4.js"
+    "static/js/main.937f3044.js"
   ]
 }
