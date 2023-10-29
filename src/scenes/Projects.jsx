@@ -1,12 +1,12 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-import project1 from "../assets/netflix.png"
-import project2 from "../assets/Gym-website.png"
-import project3 from "../assets/Dashboard.png"
-import project4 from "../assets/creative-webpage.png"
-import project5 from "../assets/linkdin.png"
-import project6 from "../assets/slack.png"
-import project7 from "../assets/food2.png"
+import project1 from "../assets/netflix.png";
+import project2 from "../assets/Gym-website.png";
+import project3 from "../assets/Dashboard.png";
+import project4 from "../assets/creative-webpage.png";
+import project5 from "../assets/linkdin.png";
+import project6 from "../assets/slack.png";
+import project7 from "../assets/food2.png";
 
 const container = {
   hidden: {},
@@ -22,24 +22,26 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title ,linkurl,linkout,projectimg}) => {
+const Project = ({ title, linkurl, linkout, projectimg }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+    bg-grey z-30 flex flex-col justify-center items-center text-center  text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
-
   return (
-    <motion.div variants={projectVariant} className="relative p-9 shadow-lg">
+    <motion.div
+      variants={projectVariant}
+      className="relative  shadow-lg cursor-pointer"
+    >
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <div className="flex m-2 gap-2">
+        <div className="flex m-2 gap-2 w-full px-8">
           <button
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold  
+            className="bg-gradient-rainblue text-deep-blue rounded-sm  font-semibold  w-[50%] py-4
             
               hover:bg-blue hover:text-white transition duration-500"
           >
             <a href={linkurl}>View code</a>
           </button>
-          <button className="bg-deep-blue text-yellow hover:text-red transition duration-500  flex items-center justify-center px-10 font-playfair">
+          <button className="bg-deep-blue text-yellow hover:text-red transition duration-500 w-[50%] py-4  flex items-center justify-center  font-playfair">
             <a href={linkout}>View output</a>
           </button>
         </div>
@@ -49,13 +51,13 @@ const Project = ({ title ,linkurl,linkout,projectimg}) => {
         width={"500px"}
         src={projectimg}
         alt={projectTitle}
-        style={{ height: "100%" }}
+        style={{ height: "180px" }}
       />
     </motion.div>
   );
 };
 
-const Projects=() => {
+const Projects = () => {
   return (
     <section id="projects" className="pt-48 pb-48">
       {/* HEADINGS */}
@@ -84,7 +86,7 @@ const Projects=() => {
       {/* PROJECTS */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
+          className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8"
           variants={container}
           initial="hidden"
           whileInView="visible"
@@ -109,7 +111,7 @@ const Projects=() => {
             linkurl="https://github.com/ss-sahoo/Netflix-clone"
             linkout="https://netflix-build-cc39e.web.app"
           />
-           <Project
+          <Project
             title="Slack-Clone"
             projectimg={project6}
             linkurl="https://github.com/ss-sahoo/slack-clone"
@@ -121,7 +123,7 @@ const Projects=() => {
             linkurl="https://github.com/ss-sahoo/fitness-gym-react-template"
             linkout="https://ss-sahoo.github.io/fitness-gym-react-template/"
           />
-           <Project
+          <Project
             title="Linkdin-Clone"
             projectimg={project5}
             linkurl="https://github.com/ss-sahoo/Linkedin-clone-page"
@@ -141,11 +143,9 @@ const Projects=() => {
             linkurl="https://github.com/ss-sahoo/Creative-web"
             linkout="https://ss-sahoo.github.io/Creative-web/"
           />
-         
 
           {/* ROW 3 */}
-         
-          
+
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[500px] max-h-[500px] text-2xl font-playfair font-semibold"
@@ -158,4 +158,4 @@ const Projects=() => {
   );
 };
 
-export default Projects;
+export default Projects;

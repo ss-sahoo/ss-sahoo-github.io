@@ -10,7 +10,7 @@ const Footer = () => {
             Shradha Sahoo
           </p>
           <p className="font-playfair text-md text-yellow">
-            shradhabook21@gmail.com.
+            <a href="mailto:shradhabook21@gmail.com">shradhabook21@gmail.com</a>
           </p>
         </div>
       </div>
@@ -18,4 +18,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer;
